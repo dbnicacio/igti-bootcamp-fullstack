@@ -50,7 +50,6 @@ function centenas(numero) {
   } else if (numero.substr(1, 2) > 10) {
     numeroExtenso += " e " + dezenas(numero.substr(1, 2));
   }
-
   return numeroExtenso;
 }
 
