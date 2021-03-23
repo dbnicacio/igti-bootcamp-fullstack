@@ -1,11 +1,6 @@
 import fs from "fs";
 import readline from "readline";
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-
 const DIR_DADOS = "./dados/";
 const DIR_GERADOS = `${DIR_DADOS}gerados/`;
 const DIR_ARQ_ESTADOS = "./dados/Estados.json";
@@ -21,9 +16,19 @@ maiorCidadePorEstado();
 menorCidadePorEstado();
 maiorCidade();
 menorCidade();
-rl.question("Digite um estado: ", entradaEstado => {
-  console.log("Quantidade de cidades: " + calculaCidadesUF(entradaEstado.toUpperCase()));
-});
+buscaCidadesEstado();
+
+function buscaCidadesEstado() {
+
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+  });
+
+  rl.question("Digite um estado: ", entradaEstado => {
+    console.log("Quantidade de cidades: " + calculaCidadesUF(entradaEstado.toUpperCase()));
+  });
+}
 
 function lerArquivos() {
   try {
@@ -78,107 +83,54 @@ function menoresEstados() {
 
 function maiorCidadePorEstado() {
   let listaEstados = [];
-  listaEstados = estados.map(estado => {
-    const { Sigla } = estado;
-
-    let listaCidades = JSON.parse(fs.readFileSync(`${DIR_GERADOS}${estado.Sigla}.json`, "utf-8"))
-    let cidadeMaiorNome = listaCidades.sort((a, b) => {
-
-      if (a.Nome.length == b.Nome.length) {
-        return (a.Nome.localeCompare(b.Nome));
-      } else {
-        return b.Nome.length - a.Nome.length
-      }
-    })
-
-
-    return {
-      UF: Sigla,
-      Cidades: cidadeMaiorNome[0].Nome
-    };
-  })
+  listaEstados = estados.map(estado => mapListaCidades(estado, sortMaiores))
   console.log(listaEstados)
-  //return listaEstados;
 }
 
 function menorCidadePorEstado() {
   let listaEstados = [];
-  listaEstados = estados.map(estado => {
-    const { Sigla } = estado;
-
-    let listaCidades = JSON.parse(fs.readFileSync(`${DIR_GERADOS}${estado.Sigla}.json`, "utf-8"))
-    let cidadeMaiorNome = listaCidades.sort((a, b) => {
-      if (a.Nome.length == b.Nome.length) {
-        return (a.Nome.localeCompare(b.Nome));
-      } else {
-        return a.Nome.length - b.Nome.length
-      }
-    })
-
-    return {
-      UF: Sigla,
-      Cidades: cidadeMaiorNome[0].Nome
-    };
-  })
+  listaEstados = estados.map(estado => mapListaCidades(estado, sortMenores))
   console.log(listaEstados)
-  //return listaEstados;
 }
-
 
 function maiorCidade() {
   let listaEstados = [];
-  listaEstados = estados.map(estado => {
-    const { Sigla } = estado;
-
-    let listaCidades = JSON.parse(fs.readFileSync(`${DIR_GERADOS}${estado.Sigla}.json`, "utf-8"))
-    let cidadeMaiorNome = listaCidades.sort((a, b) => {
-
-      if (a.Nome.length == b.Nome.length) {
-        return (a.Nome.localeCompare(b.Nome));
-      } else {
-        return b.Nome.length - a.Nome.length
-      }
-    })
-
-    return {
-      UF: Sigla,
-      Cidade: cidadeMaiorNome[0].Nome
-    };
-  })
-  console.log(listaEstados.sort((a, b) => {
-    if (a.Cidade.length == b.Cidade.length) {
-      return (a.Cidade.localeCompare(b.Cidade));
-    } else {
-      return b.Cidade.length - a.Cidade.length
-    }
-  })[0])
+  listaEstados = estados.map(estado => mapListaCidades(estado, sortMaiores))
+  console.log(listaEstados.sort(sortMaiores)[0])
 }
 
 function menorCidade() {
   let listaEstados = [];
-  listaEstados = estados.map(estado => {
-    const { Sigla } = estado;
+  listaEstados = estados.map(estado => mapListaCidades(estado, sortMenores))
+  console.log(listaEstados.sort(sortMenores)[0])
+}
 
-    let listaCidades = JSON.parse(fs.readFileSync(`${DIR_GERADOS}${estado.Sigla}.json`, "utf-8"))
-    let cidadeMaiorNome = listaCidades.sort((a, b) => {
-      if (a.Nome.length == b.Nome.length) {
-        return (a.Nome.localeCompare(b.Nome));
-      } else {
-        return a.Nome.length - b.Nome.length
-      }
-    })
+/*Funçõe Auxiliares */
 
-    return {
-      UF: Sigla,
-      Cidade: cidadeMaiorNome[0].Nome
-    };
-  })
-  console.log(listaEstados.sort((a, b) => {
-    if (a.Cidade.length == b.Cidade.length) {
-      return (a.Cidade.localeCompare(b.Cidade));
-    } else {
-      return a.Cidade.length - b.Cidade.length
-    }
-  })[0])
-  //return listaEstado
+function sortMaiores(a, b) {
+  if (a.Nome.length == b.Nome.length) {
+    return (a.Nome.localeCompare(b.Nome));
+  } else {
+    return b.Nome.length - a.Nome.length
+  }
+}
+
+function sortMenores(a, b) {
+  if (a.Nome.length == b.Nome.length) {
+    return (a.Nome.localeCompare(b.Nome));
+  } else {
+    return a.Nome.length - b.Nome.length
+  }
+}
+
+function mapListaCidades(estado, tipoSort) {
+  const { Sigla } = estado;
+
+  let listaCidades = JSON.parse(fs.readFileSync(`${DIR_GERADOS}${estado.Sigla}.json`, "utf-8"))
+  let cidadeMaiorNome = listaCidades.sort(tipoSort)
+
+  return {
+    UF: Sigla,
+    Nome: cidadeMaiorNome[0].Nome
+  };
 }
