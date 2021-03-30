@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>DesafioIGTI-1</title>
+  </head>
+  <body class="bg-gray-900">
+    <div class="container mt-8 mx-auto">
+      <h1 class="text-center text-2xl font-semibold text-gray-50">Busca de usuários</h1>
+      <input autocomplete="off" class="input-text bg-gray-700 rounded-full mt-8 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" id="search" type="text" placeholder="Digite Aqui">
+      <div class="mt-8 grid grid-cols-2 ">
+        <div class="text-gray-50 bg-gray-700 mr-4">
+          <h1 class="main-text text-center text-2xl font-semibold text-gray-50">Nenhum filtro aplicado</h1>
+          <div class="ml-5" id = "filtered-users">
+          </div>
+        </div>
+        <div class="text-gray-50 bg-gray-700 ml-4">
+          <h1 class="text-center text-2xl font-semibold text-gray-50 submain-text">Nada a ser exibido</h1>
+          <div class="status ml-6"></div>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+2021-03-30T00:11:17.809Z [my-bank-api] info: API Started!
+2021-03-30T00:13:21.562Z [my-bank-api] info: API Started!
+2021-03-30T00:14:13.878Z [my-bank-api] error: POST /grade - Campos obrigatórios não preenchidos.
+2021-03-30T00:15:32.913Z [my-bank-api] info: API Started!
+2021-03-30T00:16:19.510Z [my-bank-api] info: API Started!
+2021-03-30T00:16:44.955Z [my-bank-api] info: API Started!
+2021-03-30T00:17:57.809Z [my-bank-api] info: API Started!
+2021-03-30T00:18:45.415Z [my-bank-api] info: API Started!
+2021-03-30T00:18:48.269Z [my-bank-api] info: API Started!
+2021-03-30T00:19:12.279Z [my-bank-api] info: API Started!
+2021-03-30T00:19:25.268Z [my-bank-api] info: API Started!
+2021-03-30T00:21:38.242Z [my-bank-api] info: API Started!
+2021-03-30T00:37:10.523Z [my-bank-api] info: API Started!
+2021-03-30T00:37:36.551Z [my-bank-api] info: GET /grade/:id
+2021-03-30T00:37:53.660Z [my-bank-api] info: API Started!
+2021-03-30T00:40:02.074Z [my-bank-api] info: GET /grade/notaTotal/
+2021-03-30T00:40:50.949Z [my-bank-api] info: API Started!
+2021-03-30T00:40:53.779Z [my-bank-api] info: GET /grade/notaTotal/
+2021-03-30T00:41:53.992Z [my-bank-api] info: API Started!
+2021-03-30T00:47:09.092Z [my-bank-api] info: API Started!
+2021-03-30T00:47:11.804Z [my-bank-api] error: GET /grade - grade is not defined
+2021-03-30T00:47:55.977Z [my-bank-api] info: API Started!
+2021-03-30T00:47:57.868Z [my-bank-api] info: GET /grade/notaTotal/
+2021-03-30T00:48:51.647Z [my-bank-api] info: API Started!
+2021-03-30T00:48:54.383Z [my-bank-api] info: GET /grade/notaTotal/
+2021-03-30T00:48:58.041Z [my-bank-api] info: GET /grade/notaTotal/
+2021-03-30T00:49:20.627Z [my-bank-api] info: API Started!
+2021-03-30T00:49:24.239Z [my-bank-api] info: GET /grade/notaTotal/
+2021-03-30T00:50:34.795Z [my-bank-api] info: API Started!
+2021-03-30T00:50:36.464Z [my-bank-api] info: GET /grade/notaTotal/
+2021-03-30T00:50:58.065Z [my-bank-api] info: API Started!
+2021-03-30T00:51:00.547Z [my-bank-api] info: GET /grade/notaTotal/
+2021-03-30T00:51:43.793Z [my-bank-api] info: API Started!
+2021-03-30T00:51:46.213Z [my-bank-api] error: GET /grade - Registro não encontrado.
+2021-03-30T00:51:50.214Z [my-bank-api] info: GET /grade/notaTotal/
+2021-03-30T00:53:18.956Z [my-bank-api] info: API Started!
+2021-03-30T00:53:39.914Z [my-bank-api] info: API Started!
+2021-03-30T00:55:22.855Z [my-bank-api] info: API Started!
+2021-03-30T00:56:03.220Z [my-bank-api] error: GET /grade - Registro não encontrado.
+2021-03-30T00:56:22.672Z [my-bank-api] info: GET /grade/notaTotal/
+2021-03-30T00:56:43.565Z [my-bank-api] info: API Started!
+2021-03-30T00:56:45.499Z [my-bank-api] info: GET /grade/notaTotal/
+2021-03-30T00:59:31.718Z [my-bank-api] info: API Started!
+2021-03-30T01:01:59.036Z [my-bank-api] info: API Started!
+2021-03-30T01:02:11.489Z [my-bank-api] info: API Started!
+2021-03-30T01:02:12.444Z [my-bank-api] info: GET /grade/notaTotal/
+2021-03-30T01:02:22.332Z [my-bank-api] info: GET /grade/topGrade/
+2021-03-30T01:02:28.383Z [my-bank-api] info: API Started!
+2021-03-30T01:02:29.377Z [my-bank-api] info: GET /grade/topGrade/
+2021-03-30T01:02:34.122Z [my-bank-api] info: API Started!
+2021-03-30T01:02:35.128Z [my-bank-api] info: GET /grade/topGrade/
+2021-03-30T01:03:35.050Z [my-bank-api] info: API Started!
+2021-03-30T01:03:37.018Z [my-bank-api] info: GET /grade/topGrade/
+2021-03-30T01:03:43.464Z [my-bank-api] info: API Started!
+2021-03-30T01:03:44.487Z [my-bank-api] info: GET /grade/topGrade/
+2021-03-30T01:06:01.199Z [my-bank-api] info: GET /grade/notaTotal/
+2021-03-30T01:07:13.176Z [my-bank-api] info: GET /grade/topGrade/
+2021-03-30T01:07:47.251Z [my-bank-api] info: GET /grade/notaTotal/
+2021-03-30T01:08:00.645Z [my-bank-api] info: GET /grade/notaTotal/
+2021-03-30T01:09:13.503Z [my-bank-api] info: POST /grade - {"id":49,"student":"Roberto Achar","subject":"03 - React","type":"Fórum","value":10,"timestamp":"2021-03-30T01:09:13.502Z"}
+2021-03-30T01:09:34.459Z [my-bank-api] info: GET /grade/notaTotal/
+2021-03-30T01:11:13.768Z [my-bank-api] info: API Started!
+2021-03-30T01:11:31.779Z [my-bank-api] info: POST /grade - {"id":50,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Desafio","value":15,"timestamp":"2021-03-30T01:11:31.776Z"}
+2021-03-30T01:12:29.329Z [my-bank-api] info: GET /grade/:id
+2021-03-30T01:15:51.097Z [my-bank-api] info: API Started!
+2021-03-30T01:15:54.564Z [my-bank-api] info: POST /grade - {"id":51,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Desafio","value":15,"timestamp":"2021-03-30T01:15:54.560Z"}
+2021-03-30T01:19:30.795Z [my-bank-api] info: API Started!
+2021-03-30T01:19:36.198Z [my-bank-api] info: API Started!
+2021-03-30T01:19:39.844Z [my-bank-api] info: POST /grade - {"id":52,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Desafio","value":15,"timestamp":"2021-03-30T01:19:39.841Z"}
+2021-03-30T01:20:32.473Z [my-bank-api] info: API Started!
+2021-03-30T01:20:35.316Z [my-bank-api] info: POST /grade - {"id":53,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Desafio","value":15,"timestamp":"2021-03-30T01:20:35.312Z"}
+2021-03-30T01:20:56.655Z [my-bank-api] info: API Started!
+2021-03-30T01:21:12.424Z [my-bank-api] info: PUT /grade - {"id":33,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Desafio","value":15}
+2021-03-30T01:21:34.127Z [my-bank-api] info: API Started!
+2021-03-30T01:21:36.159Z [my-bank-api] info: PUT /grade - {"id":33,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Desafio","value":15}
+2021-03-30T01:22:35.336Z [my-bank-api] info: GET /grade/notaTotal/
+2021-03-30T01:24:16.425Z [my-bank-api] info: DELETE /grade/:id - 32
+2021-03-30T01:24:45.592Z [my-bank-api] info: GET /grade/notaTotal/
+2021-03-30T01:25:17.839Z [my-bank-api] info: GET /grade/:id

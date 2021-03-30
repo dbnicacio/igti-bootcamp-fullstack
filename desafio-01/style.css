@@ -1,0 +1,13 @@
+.input-text {
+  color: white;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin: 2em 0;
+}
+
+.profile-image {
+  margin-right: 1em;
+}
